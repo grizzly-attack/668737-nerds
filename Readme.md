@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Евгения Хохлова](https://up.htmlacademy.ru/htmlcss/20/user/668737).
-* Наставник: `Неизвестно`.
+* Наставник: [Anton Grishin](https://up.htmlacademy.ru/htmlcss/20/user/277333).
 
 ---
 
