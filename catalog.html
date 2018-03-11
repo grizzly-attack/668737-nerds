@@ -29,7 +29,77 @@
 		
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<!--Место для формы-->
+			
+			<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+				
+				<fieldset>
+					<legend>СТОИМОСТЬ:</legend>
+					<label for="value">
+						<input type="range" min="0" max="15000" step="1" id="value" >
+					</label>
+					<label for="value-from">от</label>
+					<input type="text" name="value-from" placeholder="0" id="value-from">
+					<label for="value-to">до</label>
+					<input type="text" name="value-to" placeholder="15 000" id="value-to">
+				</fieldset>
+
+				<fieldset>
+					<legend>СЕТКА:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="adaptive" value="adaptive" checked>
+							<label for="adaptive">Адаптивная</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="fixed" value="fixed">
+							<label for="fixed">Фиксированная</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="rubber" value="rubber">
+							<label for="rubber">Резиновая</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<fieldset>
+					<legend>ОСОБЕННОСТИ:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="features-slider" checked>
+							<label for="features-slider">Слайдер</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage" id="features-advantage">
+							<label for="features-advantage">Блок преимуществ</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="features-news" checked>
+							<label for="features-news">Новости</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="features-gallery">
+							<label for="features-gallery">Галерея</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="features-cart">
+							<label for="features-cart">Корзина</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<button type="submit" class="show-button">ПОКАЗАТЬ</button>
+
+				<fieldset>
+					<legend>СОРТИРОВАТЬ:</legend>
+					<button type="submit" class="sort-button">По цене</button>
+					<button type="submit" class="sort-button">По типу</button>
+					<button type="submit" class="sort-button">По названию</button>
+
+					<button type="submit" class="triangle-sort-button">Сортировать по убыванию</button>
+					<button type="submit" class="triangle-sort-button">Сортировать по возрастанию</button>
+				</fieldset>
+
+			</form>
 		</section>
 		
 		<section class="catalog">
@@ -104,7 +174,7 @@
 				ул. Б. Конюшенная, д. 19/8
 			</p>
 			<p>тел. +7 (812) 275-75-75</p>
-			<button>Напишите нам</button>
+			<a href="#" class="written-button">Напишите нам</a>
 		</section>
 		
 		<div>
@@ -117,5 +187,30 @@
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 		</div>
 	</footer>
+
+	<section class="write-us">
+		<h2 class="visually-hidden">Форма для письма</h2>
+		<p class="write-us-title">
+			Напишите нам
+		</p>
+		<form class="sending-letter" method="post" action="https://echo.htmlacademy.ru">
+			<p>
+				<label for="Name">Ваше имя:</label>
+				<input type="text" name="Name" placeholder="Имя Фамилия" id="Name">
+			</p>
+
+			<p>
+				<label for="E-mail">Ваш e-mail:</label>
+				<input type="text" name="E-mail" placeholder="email@example.com" id="E-mail">
+			</p>
+
+			<p>
+				<label for="mail-text">Текст письма:</label>
+				<textarea id="mail-text" placeholder="В свободной форме"></textarea>
+			</p>
+
+			<button class="button" type="submit">ОТПРАВИТЬ</button>
+		</form>
+	</section>
 </body>
 </html>
