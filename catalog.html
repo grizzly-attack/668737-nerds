@@ -34,13 +34,19 @@
 				
 				<fieldset>
 					<legend>СТОИМОСТЬ:</legend>
-					<label for="value">
-						<input type="range" min="0" max="15000" step="1" id="value" >
-					</label>
-					<label for="value-from">от</label>
-					<input type="text" name="value-from" placeholder="0" id="value-from">
-					<label for="value-to">до</label>
-					<input type="text" name="value-to" placeholder="15 000" id="value-to">
+					<p>
+						<label for="value">
+							<input type="range" min="0" max="15000" step="1" id="value" >
+						</label>
+					</p>
+					<p>
+						<label for="value-from">от</label>
+						<input type="text" name="value-from" placeholder="0" id="value-from">
+					</p>
+					<p>
+						<label for="value-to">до</label>
+						<input type="text" name="value-to" placeholder="15 000" id="value-to">
+					</p>
 				</fieldset>
 
 				<fieldset>
@@ -65,38 +71,44 @@
 					<legend>ОСОБЕННОСТИ:</legend>
 					<ul>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="features-slider" checked>
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="features-slider" value="Выбрано" checked>
 							<label for="features-slider">Слайдер</label>
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage" id="features-advantage">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage" id="features-advantage" value="Выбрано">
 							<label for="features-advantage">Блок преимуществ</label>
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="features-news" checked>
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="features-news" value="Выбрано" checked>
 							<label for="features-news">Новости</label>
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="features-gallery">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="features-gallery" value="Выбрано">
 							<label for="features-gallery">Галерея</label>
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="features-cart">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="features-cart" value="Выбрано">
 							<label for="features-cart">Корзина</label>
 						</li>
 					</ul>
 				</fieldset>
-
 				<button type="submit" class="show-button">ПОКАЗАТЬ</button>
+			</form>
 
+			<form method="get" action="https://echo.htmlacademy.ru">
 				<fieldset>
 					<legend>СОРТИРОВАТЬ:</legend>
-					<button type="submit" class="sort-button">По цене</button>
-					<button type="submit" class="sort-button">По типу</button>
-					<button type="submit" class="sort-button">По названию</button>
+					<ul>
+						<li class="sort-button"><input class="sort-button-input" type="button" value="По цене"></li>
+						<li class="sort-button"><input class="sort-button-input" type="button" value="По типу"></li>
+						<li class="sort-button"><input class="sort-button-input" type="button" value="По названию"></li>
+					</ul>
 
-					<button type="submit" class="triangle-sort-button">Сортировать по убыванию</button>
-					<button type="submit" class="triangle-sort-button">Сортировать по возрастанию</button>
+					<ul>
+						<li class="sort-button"><input class="triangle-sort-button-input" type="button" value="Сортировать по убыванию"></li>
+						<li class="sort-button"><input class="triangle-sort-button-input" type="button" value="Сортировать по возрастанию"></li>
+					</ul>
+
 				</fieldset>
 
 			</form>
@@ -193,20 +205,21 @@
 		<p class="write-us-title">
 			Напишите нам
 		</p>
+		<img src="map.png" width="1440" height="416" alt="Карта">
 		<form class="sending-letter" method="post" action="https://echo.htmlacademy.ru">
-			<p>
-				<label for="Name">Ваше имя:</label>
-				<input type="text" name="Name" placeholder="Имя Фамилия" id="Name">
+			<p class="sending-letter-block">
+				<label for="sending-letter-name">Ваше имя:</label>
+				<input class="sending-letter-input" type="text" name="name" placeholder="Имя Фамилия" id="sending-letter-name">
 			</p>
 
-			<p>
-				<label for="E-mail">Ваш e-mail:</label>
-				<input type="text" name="E-mail" placeholder="email@example.com" id="E-mail">
+			<p class="sending-letter-block">
+				<label for="sending-letter-e-mail">Ваш e-mail:</label>
+				<input class="sending-letter-input" type="text" name="e-mail" placeholder="email@example.com" id="sending-letter-e-mail">
 			</p>
 
-			<p>
+			<p class="sending-letter-block">
 				<label for="mail-text">Текст письма:</label>
-				<textarea id="mail-text" placeholder="В свободной форме"></textarea>
+				<textarea class="sending-letter-textarea" id="mail-text" placeholder="В свободной форме"></textarea>
 			</p>
 
 			<button class="button" type="submit">ОТПРАВИТЬ</button>

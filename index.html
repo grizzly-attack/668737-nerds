@@ -25,22 +25,30 @@
 	
 	<main>
 		
-		<h1 class="visually-hidden">Nerds</h1>
+		<h1 class="visually-hidden">Nerds. Главная страница</h1>
 		
 		<section class="slider">
-			<h2 class="visually-hidden">Слайдер</h2>
-			
-			<p class="slider-title">Долго, дорого, скрупулезно.</p>
-			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-			<a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
-			
-			<p class="slider-title">Любим математику как никто другой</p>
-			<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-			<a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
-			
-			<p class="slider-title">Только ночь, только хардкор</p>
-			<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-			<a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+			<h2 class="visually-hidden">Преимущества компании</h2>
+			<div class="slider-block">
+				<img src="img/slide1.png" width="698" height="413" alt="1-й слайд">
+				<p class="slider-title">Долго, дорого, скрупулезно.</p>
+				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+				<a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+			</div>
+
+			<div class="slider-block">
+				<img src="img/slide2.png" width="663" height="430" alt="2-й слайд">
+				<p class="slider-title">Любим математику как никто другой</p>
+				<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+				<a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+			</div>	
+				
+			<div class="slider-block">
+				<img src="img/slide3.png" width="759" height="411" alt="3-й слайд">
+				<p class="slider-title">Только ночь, только хардкор</p>
+				<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+				<a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+			</div>
 		</section>
 		
 		<section class="services">
@@ -99,10 +107,10 @@
 		<section class="partners">
 			<h2 class="visually-hidden">Партнеры</h2>
 			<ul class="partners-list">
-				<li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"></a></li>
-				<li class="partners-item"><a href="#"></a></li>
-				<li class="partners-item"><a href="#"></a></li>
-				<li class="partners-item"><a href="#"></a></li>
+				<li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="html academy"></a></li>
+				<li class="partners-item"><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinsky"></a></li>
+				<li class="partners-item"><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink App"></a></li>
+				<li class="partners-item"><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="MISHKA"></a></li>
 			</ul>
 		</section>
 	</main>
@@ -135,20 +143,21 @@
 		<p class="write-us-title">
 			Напишите нам
 		</p>
+		<img src="map.png" width="1440" height="416" alt="Карта">
 		<form class="sending-letter" method="post" action="https://echo.htmlacademy.ru">
-			<p>
-				<label for="Name">Ваше имя:</label>
-				<input type="text" name="Name" placeholder="Имя Фамилия" id="Name">
+			<p class="sending-letter-block">
+				<label for="sending-letter-name">Ваше имя:</label>
+				<input class="sending-letter-input" type="text" name="name" placeholder="Имя Фамилия" id="sending-letter-name">
 			</p>
 
-			<p>
-				<label for="E-mail">Ваш e-mail:</label>
-				<input type="text" name="E-mail" placeholder="email@example.com" id="E-mail">
+			<p class="sending-letter-block">
+				<label for="sending-letter-e-mail">Ваш e-mail:</label>
+				<input class="sending-letter-input" type="text" name="e-mail" placeholder="email@example.com" id="sending-letter-e-mail">
 			</p>
 
-			<p>
+			<p class="sending-letter-block">
 				<label for="mail-text">Текст письма:</label>
-				<textarea id="mail-text" placeholder="В свободной форме"></textarea>
+				<textarea class="sending-letter-textarea" id="mail-text" placeholder="В свободной форме"></textarea>
 			</p>
 
 			<button class="button" type="submit">ОТПРАВИТЬ</button>
