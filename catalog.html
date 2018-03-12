@@ -35,9 +35,7 @@
 				<fieldset>
 					<legend>СТОИМОСТЬ:</legend>
 					<p>
-						<label for="value">
-							<input type="range" min="0" max="15000" step="1" id="value" >
-						</label>
+						<input type="range" min="0" max="15000" step="1">
 					</p>
 					<p>
 						<label for="value-from">от</label>
@@ -99,14 +97,14 @@
 				<fieldset>
 					<legend>СОРТИРОВАТЬ:</legend>
 					<ul>
-						<li class="sort-button"><input class="sort-button-input" type="button" value="По цене"></li>
-						<li class="sort-button"><input class="sort-button-input" type="button" value="По типу"></li>
-						<li class="sort-button"><input class="sort-button-input" type="button" value="По названию"></li>
+						<li class="sort-button"><button class="sort-button-input" type="button">По цене</button></li>
+						<li class="sort-button"><button class="sort-button-input" type="button">По типу</button></li>
+						<li class="sort-button"><button class="sort-button-input" type="button">По названию</button></li>
 					</ul>
 
 					<ul>
-						<li class="sort-button"><input class="triangle-sort-button-input" type="button" value="Сортировать по убыванию"></li>
-						<li class="sort-button"><input class="triangle-sort-button-input" type="button" value="Сортировать по возрастанию"></li>
+						<li class="sort-button"><button class="triangle-sort-button-input" type="button">Сортировать по убыванию</button></li>
+						<li class="sort-button"><button class="triangle-sort-button-input" type="button">Сортировать по возрастанию</button></li>
 					</ul>
 
 				</fieldset>
@@ -205,7 +203,8 @@
 		<p class="write-us-title">
 			Напишите нам
 		</p>
-		<img src="map.png" width="1440" height="416" alt="Карта">
+		<img src="img/map.png" width="1440" height="416" alt="Карта">
+		
 		<form class="sending-letter" method="post" action="https://echo.htmlacademy.ru">
 			<p class="sending-letter-block">
 				<label for="sending-letter-name">Ваше имя:</label>
@@ -224,6 +223,8 @@
 
 			<button class="button" type="submit">ОТПРАВИТЬ</button>
 		</form>
+
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 </body>
 </html>
