@@ -33,7 +33,7 @@
 			<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
 				
 				<fieldset>
-					<legend>СТОИМОСТЬ:</legend>
+					<legend class="filter-title">СТОИМОСТЬ:</legend>
 					<p>
 						<input type="range" min="0" max="15000" step="1">
 					</p>
@@ -48,7 +48,7 @@
 				</fieldset>
 
 				<fieldset>
-					<legend>СЕТКА:</legend>
+					<legend class="filter-title">СЕТКА:</legend>
 					<ul>
 						<li class="filter-option">
 							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="adaptive" value="adaptive" checked>
@@ -66,7 +66,7 @@
 				</fieldset>
 
 				<fieldset>
-					<legend>ОСОБЕННОСТИ:</legend>
+					<legend class="filter-title">ОСОБЕННОСТИ:</legend>
 					<ul>
 						<li class="filter-option">
 							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="features-slider" value="Выбрано" checked>
@@ -93,23 +93,19 @@
 				<button type="submit" class="show-button">ПОКАЗАТЬ</button>
 			</form>
 
-			<form method="get" action="https://echo.htmlacademy.ru">
-				<fieldset>
-					<legend>СОРТИРОВАТЬ:</legend>
-					<ul>
-						<li class="sort-button"><button class="sort-button-input" type="button">По цене</button></li>
-						<li class="sort-button"><button class="sort-button-input" type="button">По типу</button></li>
-						<li class="sort-button"><button class="sort-button-input" type="button">По названию</button></li>
-					</ul>
+			<p class="filter-title">СОРТИРОВАТЬ:</p>
+			<ul>
+				<li><a class="sort-button" href="#">По цене</a></li>
+				<li><a class="sort-button" href="#">По типу</a></li>
+				<li><a class="sort-button" href="#">По названию</a></li>
+			</ul>
+			 
 
-					<ul>
-						<li class="sort-button"><button class="triangle-sort-button-input" type="button">Сортировать по убыванию</button></li>
-						<li class="sort-button"><button class="triangle-sort-button-input" type="button">Сортировать по возрастанию</button></li>
-					</ul>
+			<ul>
+				<li class="sort-button"><a class="triangle-sort-button-input" href="#">Сортировать по убыванию</a></li>
+				<li class="sort-button"><a class="triangle-sort-button-input" href="#">Сортировать по возрастанию</a></li>
+			</ul>
 
-				</fieldset>
-
-			</form>
 		</section>
 		
 		<section class="catalog">
