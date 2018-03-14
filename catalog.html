@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	
@@ -20,7 +23,7 @@
 			</ul>
 		</nav>
 		
-		<a class="cart" href="#">Корзина</a>
+		<a class="main-navigation cart" href="#">Корзина</a>
 	</header>
 	
 	<main class="container">
@@ -49,7 +52,7 @@
 
 				<fieldset>
 					<legend class="filter-title">СЕТКА:</legend>
-					<ul>
+					<ul class="filter-option-list">
 						<li class="filter-option">
 							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="adaptive" value="adaptive" checked>
 							<label for="adaptive">Адаптивная</label>
@@ -67,7 +70,7 @@
 
 				<fieldset>
 					<legend class="filter-title">ОСОБЕННОСТИ:</legend>
-					<ul>
+					<ul class="filter-option-list">
 						<li class="filter-option">
 							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="features-slider" value="Выбрано" checked>
 							<label for="features-slider">Слайдер</label>
@@ -94,14 +97,14 @@
 			</form>
 
 			<p class="filter-title">СОРТИРОВАТЬ:</p>
-			<ul>
+			<ul class="sort-button-list">
 				<li><a class="sort-button" href="#">По цене</a></li>
 				<li><a class="sort-button" href="#">По типу</a></li>
 				<li><a class="sort-button" href="#">По названию</a></li>
 			</ul>
 			 
 
-			<ul>
+			<ul class="triangle-sort-button-list">
 				<li class="sort-button"><a class="triangle-sort-button-input" href="#">Сортировать по убыванию</a></li>
 				<li class="sort-button"><a class="triangle-sort-button-input" href="#">Сортировать по возрастанию</a></li>
 			</ul>
@@ -115,7 +118,7 @@
 				<li class="catalog-item">
 					<img src="img/sedona.jpg" width="360" height="620" alt="SEDONA">
 					<div class="product-description">
-						<h3><a href="#">SEDONA</a></h3>
+						<h3 class="product-description-title"><a href="#">SEDONA</a></h3>
 						<p>Информационный сайт для туристов</p>
 						<a class="price-button" href="#">9 900 руб.</a>
 					</div>
@@ -123,7 +126,7 @@
 				<li class="catalog-item">
 					<img src="img/barbershop.jpg" width="360" height="620" alt="Barbershop Hover">
 					<div class="product-description">
-						<h3><a href="#">Barbershop Hover</a></h3>
+						<h3 class="product-description-title"><a href="#">Barbershop Hover</a></h3>
 						<p>Сайт салоны красоты. Для мужчин, да.</p>
 						<a class="price-button" href="#">9 900 руб.</a>
 					</div>
@@ -131,7 +134,7 @@
 				<li class="catalog-item">
 					<img src="img/aplus.jpg" width="360" height="620" alt="A Plus">
 					<div class="product-description">
-						<h3><a href="#">A Plus</a></h3>
+						<h3 class="product-description-title"><a href="#">A Plus</a></h3>
 						<p>Лендинг курсов повышения квалификации</p>
 						<a class="price-button" href="#">9 900 руб.</a>
 					</div>
@@ -139,7 +142,7 @@
 				<li class="catalog-item">
 					<img src="img/pink-A.jpg" width="360" height="620" alt="Pink App">
 					<div class="product-description">
-						<h3><a href="#">Pink App</a></h3>
+						<h3 class="product-description-title"><a href="#">Pink App</a></h3>
 						<p>Продуктовый лендинг приложения для iOS и Android</p>
 						<a class="price-button" href="#">9 900 руб.</a>
 					</div>
@@ -147,7 +150,7 @@
 				<li class="catalog-item">
 					<img src="img/mishka.jpg" width="360" height="620" alt="MISHKA">
 					<div class="product-description">
-						<h3><a href="#">MISHKA</a></h3>
+						<h3 class="product-description-title"><a href="#">MISHKA</a></h3>
 						<p>Интернет-магазин  вязаных игрушек</p>
 						<a class="price-button" href="#">9 900 руб.</a>
 					</div>
@@ -155,7 +158,7 @@
 				<li class="catalog-item">
 					<img src="img/kvast.jpg" width="360" height="620" alt="КВАСТ">
 					<div class="product-description">
-						<h3><a href="#">КВАСТ</a></h3>
+						<h3 class="product-description-title"><a href="#">КВАСТ</a></h3>
 						<p>Промо-сайт производителя крафтового кваса</p>
 						<a class="price-button" href="#">9 900 руб.</a>
 					</div>
@@ -175,11 +178,11 @@
 		<section class="contacts">
 			<h2 class="visually-hidden">Контакты</h2>
 			<p class="contacts-title"><b>NЁRDS DESIGN STUDIO</b></p>
-			<p>
+			<p class="contacts-content">
 				191186, Санкт-Петербург,<br> 
 				ул. Б. Конюшенная, д. 19/8
 			</p>
-			<p>тел. +7 (812) 275-75-75</p>
+			<p class="contacts-content">тел. +7 (812) 275-75-75</p>
 			<a href="#" class="written-button">Напишите нам</a>
 		</section>
 		
@@ -190,8 +193,9 @@
 				<li class="social-button-item-instagram"><a href="#">Инстаграм</a></li>
 			</ul>
 			<p class="social-title">Давайте дружить, это выгодно!</p>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
+			<p class="social-content">Скидка 10% для друзей из социальных сетей.</p>
 		</div>
+		<img src="img/map.png" width="1440" height="416" alt="Карта">
 	</footer>
 
 	<section class="write-us">
@@ -199,25 +203,24 @@
 		<p class="write-us-title">
 			Напишите нам
 		</p>
-		<img src="img/map.png" width="1440" height="416" alt="Карта">
 		
 		<form class="sending-letter" method="post" action="https://echo.htmlacademy.ru">
 			<p class="sending-letter-block">
-				<label for="sending-letter-name">Ваше имя:</label>
+				<label class="sending-letter-title" for="sending-letter-name">Ваше имя:</label>
 				<input class="sending-letter-input" type="text" name="name" placeholder="Имя Фамилия" id="sending-letter-name">
 			</p>
 
 			<p class="sending-letter-block">
-				<label for="sending-letter-e-mail">Ваш e-mail:</label>
+				<label class="sending-letter-title" for="sending-letter-e-mail">Ваш e-mail:</label>
 				<input class="sending-letter-input" type="text" name="e-mail" placeholder="email@example.com" id="sending-letter-e-mail">
 			</p>
 
 			<p class="sending-letter-block">
-				<label for="mail-text">Текст письма:</label>
+				<label class="sending-letter-title" for="mail-text">Текст письма:</label>
 				<textarea class="sending-letter-textarea" id="mail-text" placeholder="В свободной форме"></textarea>
 			</p>
 
-			<button class="button" type="submit">ОТПРАВИТЬ</button>
+			<button class="send-button" type="submit">ОТПРАВИТЬ</button>
 		</form>
 
 		<button class="modal-close" type="button">Закрыть</button>
