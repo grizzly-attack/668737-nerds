@@ -1083,7 +1083,7 @@ a {
 	width: 23px;
 	height: 23px;
 
-	border: 2px solid #000000;
+	border: 2px solid #4d4d4d;
     opacity: 0.4;
     border-radius: 2px;
     box-sizing: border-box;
@@ -1219,7 +1219,11 @@ a {
 	color: rgba(68,68,68,0.6);
 }
 
-.sort-button-list a:active{
+.sort-button-list a:active,{
+	color: rgba(68,68,68,1);
+}
+
+.sort-button-list .sort-button-current {
 	color: rgba(68,68,68,1);
 }
 
@@ -1280,6 +1284,7 @@ a {
 .sort-button-input-down:active::before {
 	opacity:1;
 }
+
 
 .catalog{
 	width:760px;
