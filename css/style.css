@@ -198,7 +198,7 @@ a {
 	padding-top: 13px;
 	
 	text-align: center;
- 	text-decoration: none;
+	text-decoration: none;
 }
 
 .button:hover,
@@ -270,7 +270,7 @@ a {
 	width: 4px;
 	height: 4px;
 	margin: -4px;
- 
+
 	background-color: inherit;
 	border: 2px solid #c1c1c1;
 	border-radius: 50%;
@@ -685,7 +685,7 @@ a {
 	height: 100%;
 }
 
- .social-button-item {
+.social-button-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -721,13 +721,13 @@ a {
 	background-image: url("../img/insta-icon.svg");
 }
 
- .social-button-item:hover,
- .social-button-item:focus {
+.social-button-item:hover,
+.social-button-item:focus {
 	background-color: #e74246;
 
 }
 
- .social-button-item:active {
+.social-button-item:active {
 	background-color: #d7373b;
 	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
@@ -744,7 +744,7 @@ a {
 	background-color: #ffffff;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 	z-index: 101;
- }
+}
 
 .write-us {
 	display: none;
@@ -801,10 +801,10 @@ a {
 .sending-letter-textarea {
 	box-sizing: border-box;
 	font: inherit;
- 	color: rgba(68,68,68,0.5);
- 	border: 2px solid #d7dcde;
- 	padding: 13px 15px;
- 	border-radius: 5px;
+	color: rgba(68,68,68,0.5);
+	border: 2px solid #d7dcde;
+	padding: 13px 15px;
+	border-radius: 5px;
 }
 
 .sending-letter-input {
@@ -821,24 +821,24 @@ a {
 
 .sending-letter-input:hover,
 .sending-letter-textarea:hover {
- 	border: 2px solid #b4b9bb;
+	border: 2px solid #b4b9bb;
 }
 
 .sending-letter-input:focus,
 .sending-letter-textarea:focus {
- 	color: rgba(68,68,68,1);
- 	border: 2px solid #000000;
+	color: rgba(68,68,68,1);
+	border: 2px solid #000000;
 
 }
 
 .sending-letter-input:active,
 .sending-letter-textarea:active {
- 	border: 2px solid #b4b9bb;
+	border: 2px solid #b4b9bb;
 }
 
 .sending-letter-input:invalid {
- 	color: #e74246;
- 	border: 2px solid #e74246;
+	color: #e74246;
+	border: 2px solid #e74246;
 }
 
 .send-button {
@@ -1136,7 +1136,7 @@ a {
 	content: "";
 
 	position: absolute;
- 	top: 5px;
+	top: 5px;
 	left: -26px;
 
 	width: 9px;
